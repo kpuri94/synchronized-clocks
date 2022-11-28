@@ -1,0 +1,22 @@
+.clock-digital {
+    color: black;
+    width: 450px;
+    height: 50px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-digital .time {
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 2px;
+}
+
+.clock-digital .hour,
+.clock-digital .minute,
+.clock-digital .second {
+    color: black;
+    padding: 5px;
+}

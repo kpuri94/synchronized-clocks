@@ -1,0 +1,11 @@
+<div class="clock-analog">
+    <div class="source"></div>
+    <span *ngFor="let digit of digits" class="digit digit-{{digit}}"
+        [ngStyle]="{'transform': 'rotate('+digit *30+'deg)'}">
+        <b [ngStyle]="{'transform': 'rotate(-'+digit *30+'deg)'}">
+            {{digit}}</b>
+    </span>
+    <div class="hand hour-hand" [ngStyle]="{'transform': 'rotate('+ hourHand +'deg)'}"></div>
+    <div class="hand minute-hand" [ngStyle]="{'transform': 'rotate('+ minuteHand +'deg)'}"></div>
+    <div class="hand second-hand" [ngStyle]="{'transform': 'rotate('+ secondHand +'deg)'}"></div>
+</div>

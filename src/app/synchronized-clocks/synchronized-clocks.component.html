@@ -1,0 +1,22 @@
+<div class="clock-layout">
+    <div class="clock-wrapper">
+        <app-analog-clock [hourHand]="hourHandPosition" [minuteHand]="minuteHandPosition"
+            [secondHand]="secondHandPosition">
+        </app-analog-clock>
+        <div>
+            <span id="analogTimeInputText" class="clock-input">Adjust Time On
+                Analog Clock:</span>
+            <input type="time" step="1" id="analogTimeInput" name="timeInput" value="" (change)="onSync($event)">
+        </div>
+    </div>
+
+    <div class="clock-wrapper">
+        <app-digital-clock [hour]="timeValues.hour" [minute]="timeValues.minute" [second]="timeValues.second">
+        </app-digital-clock>
+        <div style="padding-top:40px;">
+            <span id="digitalTimeInputText" class="clock-input">Adjust Time On
+                Digital Clock:</span>
+            <input type="time" step="1" id="digitalTimeInput" name="timeInput" value="" (change)="onSync($event)">
+        </div>
+    </div>
+</div>

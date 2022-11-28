@@ -1,0 +1,23 @@
+.clock-input {
+    color: chocolate;
+    font-size: larger;
+    padding: 5px;
+}
+
+.clock-layout {
+    display: flex;
+}
+
+.clock-wrapper {
+    height: 500px;
+    width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: antiquewhite;
+    box-shadow: 4px 4px 8px rgb(165, 75, 42);
+}
